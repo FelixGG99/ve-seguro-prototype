@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "822690105962",
+    "project_id": "veseguroprototype",
+    "storage_bucket": "veseguroprototype.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822690105962:android:1b9c8ffe2082993dddd813",
+        "android_client_info": {
+          "package_name": "com.veseguro.veseguroprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822690105962-g6erdppmj2s1eh5joijvmmk4obmk9lni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ4wyCznf91PKCzdYncCqxUXShdZ_H3iQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822690105962-g6erdppmj2s1eh5joijvmmk4obmk9lni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
