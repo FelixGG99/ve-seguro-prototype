@@ -12,12 +12,11 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button irInicioSesion;
-    final static String packagename = "com.kevsray.veseguro";
+    final static String packagename = "com.veseguro.veseguroprototype";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        setTheme(R.style.SplashTheme);
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent i = new Intent();
-                i.setClassName(packagename,"com.kevsray.veseguro.InicioSesion");
+                i.setClassName(packagename,"com.veseguro.veseguroprototype.InicioSesion");
                 startActivity(i);
             }
         });

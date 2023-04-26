@@ -14,16 +14,6 @@
         android:scaleType="centerCrop"
         android:src="@drawable/puebla2" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.3"
-        android:background="@android:color/transparent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/blanco"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="523dp" />
-
     <LinearLayout
         android:id="@+id/LoginPanel"
         android:layout_width="match_parent"
@@ -50,13 +40,21 @@
             android:inputType="textPassword"
             android:layout_height="60dp"
             android:hint="Contraseña" />
-        
+
         <TextView
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="¿Olvidaste tu contraseña?"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blanco" />
 
     </LinearLayout>
 
@@ -82,4 +80,45 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/logo_letrayimagen"
         />
+
+    <LinearLayout
+        android:id="@+id/Redes"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_login_shadow"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="40dp"
+        android:paddingRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Ingrese con sus redes sociales"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:background="@drawable/redsocial"
+            android:text="Continuar con Google"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:background="@drawable/redsocial"
+            />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
