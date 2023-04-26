@@ -1,4 +1,4 @@
-package com.kevsray.veseguro;
+package com.veseguro.veseguroprototype;
 
 import androidx.appcompat.app.AppCompatActivity;
 

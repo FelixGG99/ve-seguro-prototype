@@ -1,4 +1,4 @@
-package com.kevsray.veseguro;
+package com.veseguro.veseguroprototype;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -10,7 +10,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.kevsray.veseguro.databinding.ActivityMapaBinding;
+import com.veseguro.veseguroprototype.databinding.ActivityMapaBinding;
 
 public class Mapa extends FragmentActivity implements OnMapReadyCallback {
 
