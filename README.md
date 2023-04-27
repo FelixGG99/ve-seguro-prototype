@@ -16,14 +16,14 @@ mostrar un mapa interactivo que  muestra las calles con menos incidencias crimin
 
 #USO<br />
 #Iniciar sesión<br />
-#Para iniciar sesión en la aplicación, sigue estos pasos:<br />
+Para iniciar sesión en la aplicación, sigue estos pasos:<br />
 
 1. Abre la aplicación
 2. Ingresa tu nombre de usuario y contraseña en los campos correspondientes
 3. Haz clic en el botón "Iniciar sesión"
 
 #Cerrar sesión<br />
-#Para cerrar sesión en la aplicación, sigue estos pasos:<br />
+Para cerrar sesión en la aplicación, sigue estos pasos:<br />
 
 1. Abre la aplicación
 2. Haz clic en tu perfil en la esquina superior derecha de la pantalla
@@ -35,7 +35,7 @@ el estado de Puebla segun tu ubicación actual. Los usuarios pueden navegar por 
 arrastrando con los dedos, y pueden hacer zoom usando los gestos de pinza.
 
 #Marcar incidentes<br /><br />
-#Para marcar un incidente en la aplicación, sigue estos pasos:<br />
+Para marcar un incidente en la aplicación, sigue estos pasos:<br />
 
 1. Abre la aplicación
 2. Haz clic en el botón "Reportar incidente"
@@ -44,7 +44,7 @@ arrastrando con los dedos, y pueden hacer zoom usando los gestos de pinza.
 5. Haz clic en el botón "Enviar"
 
 #Ver incidentes ocurridos<br />
-#Para ver los incidentes ocurridos en la aplicación, sigue estos pasos:<br />
+Para ver los incidentes ocurridos en la aplicación, sigue estos pasos:<br />
 
 1. Abre la aplicación
 2. Haz clic en el botón "Ver incidentes"
