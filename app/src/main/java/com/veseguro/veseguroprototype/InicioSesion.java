@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -39,6 +40,8 @@ public class InicioSesion extends AppCompatActivity {
     Button btnLoginGoogle;
     Button btnLoginFacebook;
 
+    TextView tvRegistro;
+
     // ID to pick up results from starting google login intent
     private final int GOOGLE_LOGIN_INTENT_ID = 100;
 
@@ -59,6 +62,7 @@ public class InicioSesion extends AppCompatActivity {
         btnToMap            = (Button)findViewById(R.id.IniciarSesion);
         btnLoginGoogle      = (Button)findViewById(R.id.btnLoginGoogle);
         btnLoginFacebook    = (Button)findViewById(R.id.btnLoginFacebook);
+        tvRegistro          = (TextView) findViewById(R.id.RegisterLink);
 
         // Button Listeners
         btnToMap.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +70,14 @@ public class InicioSesion extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent();
                 i.setClassName(packagename,"com.veseguro.veseguroprototype.Mapa");
+                startActivity(i);
+            }
+        });
+        tvRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClassName(packagename,"com.veseguro.veseguroprototype.Registro");
                 startActivity(i);
             }
         });
