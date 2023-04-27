@@ -8,17 +8,27 @@
     android:id="@+id/Principal">
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/puebla2" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blanco"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-36dp" />
+
     <LinearLayout
         android:id="@+id/LoginPanel"
         android:layout_width="match_parent"
-        android:layout_height="340dp"
+        android:layout_height="320dp"
         android:background="@drawable/shape_login_shadow"
+        android:orientation="vertical"
         android:paddingLeft="50dp"
         android:paddingTop="70dp"
         android:paddingRight="50dp"
@@ -27,26 +37,26 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207"
-        android:orientation="vertical">
+        app:layout_constraintVertical_bias="0.121">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:drawableStart="@drawable/usuario"
             android:hint="Usuario" />
 
         <EditText
             android:layout_width="match_parent"
-            android:inputType="textPassword"
             android:layout_height="60dp"
-            android:hint="Contraseña" />
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
 
         <TextView
-            android:layout_marginTop="20dp"
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="¿Olvidaste tu contraseña?"/>
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="¿Olvidaste tu contraseña?" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -55,6 +65,13 @@
             android:background="@android:color/transparent"
             android:scaleType="centerCrop"
             android:src="@drawable/blanco" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/puebla2" />
 
     </LinearLayout>
 
@@ -95,7 +112,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759">
+        app:layout_constraintVertical_bias="0.65">
 
         <TextView
             android:layout_width="match_parent"
@@ -145,7 +162,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.937">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,6 +173,7 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -2,7 +2,12 @@ package com.veseguro.veseguroprototype;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.animation.Animator;
+import android.animation.TimeInterpolator;
+import android.graphics.Interpolator;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.animation.AnimationUtils;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -10,6 +15,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.veseguro.veseguroprototype.databinding.ActivityMapaBinding;
 
 public class Mapa extends FragmentActivity implements OnMapReadyCallback {
@@ -23,6 +29,12 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
 
         binding = ActivityMapaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        /*//Animacion boton
+        final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.menuMapa);
+        fab.setScaleX(0);
+        fab.setScaleY(0);*/
+
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/iraCuenta"
+            android:title="Cuenta"
+            android:icon="@drawable/usuario"/>
+
+        <item android:id="@+id/irMisrutas"
+            android:title="Mis rutas"
+            android:icon="@drawable/misrutas"/>
+
+        <item android:id="@+id/irComunidad"
+            android:title="Comunidad"
+            android:icon="@drawable/comunidad"/>
+
+        <item android:id="@+id/irPuntaje"
+            android:title="Puntaje"
+            android:icon="@drawable/puntuacion"/>
+
+        <item android:id="@+id/irConfiguracion"
+            android:title="Configuracion"
+            android:icon="@drawable/configuracion"/>
+    </group>
+</menu>
