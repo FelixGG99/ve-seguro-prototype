@@ -7,7 +7,7 @@ en su ubicación actual. La aplicación utiliza datos de crimenes  reportados po
 mostrar un mapa interactivo que  muestra las calles con menos incidencias criminales
 
 #INSTALACION
-Para instalar la aplicación, sigue  estos pasos:
+#Para instalar la aplicación, sigue  estos pasos:
 
 1. Descarga la aplicacion desde la Google Play Store
 2. Abre la aplicación
@@ -16,14 +16,14 @@ Para instalar la aplicación, sigue  estos pasos:
 
 #USO
 #Iniciar sesión
-Para iniciar sesión en la aplicación, sigue estos pasos:
+#Para iniciar sesión en la aplicación, sigue estos pasos:
 
 1. Abre la aplicación
 2. Ingresa tu nombre de usuario y contraseña en los campos correspondientes
 3. Haz clic en el botón "Iniciar sesión"
 
 #Cerrar sesión
-Para cerrar sesión en la aplicación, sigue estos pasos:
+#Para cerrar sesión en la aplicación, sigue estos pasos:
 
 1. Abre la aplicación
 2. Haz clic en tu perfil en la esquina superior derecha de la pantalla
