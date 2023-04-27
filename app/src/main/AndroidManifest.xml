@@ -13,8 +13,8 @@
              />
         <activity
             android:name=".Splash"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
-             />
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"/>
+
         <activity
             android:name=".Registro"
             android:exported="false" />
