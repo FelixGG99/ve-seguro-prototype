@@ -1,4 +1,10 @@
 <resources>
+    <!-- Login con Facebook -->
+    <string name="facebook_app_id">1883266202055372</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">11ec9cd479c759b20014423bd1afe5c7</string>
+
+
     <string name="app_name">VeSeguro</string>
     <string name="title_activity_mapa">Mapa</string>
 
