@@ -17,4 +17,8 @@
     <!-- Mensasjes de error de login-->
     <string name="GoogleLoginErrorMsg">Error al iniciar sesión con Google. Vuelve a intentar.</string>
     <string name="FacebookLoginErrorMsg">Error al iniciar sesión con Facebook. Vuelve a intentar.</string>
+
+    <!-- Package name -->
+    <string name="package_name">com.veseguro.veseguroprototype</string>
+
 </resources>

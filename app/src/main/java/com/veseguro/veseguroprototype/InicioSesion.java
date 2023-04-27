@@ -46,7 +46,6 @@ public class InicioSesion extends AppCompatActivity {
     private final int GOOGLE_LOGIN_INTENT_ID = 100;
 
     private CallbackManager callbackManager = CallbackManager.Factory.create();
-    final static String packagename = "com.veseguro.veseguroprototype";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +68,7 @@ public class InicioSesion extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent();
-                i.setClassName(packagename,"com.veseguro.veseguroprototype.Mapa");
+                i.setClassName(getString(R.string.package_name),"com.veseguro.veseguroprototype.Mapa");
                 startActivity(i);
             }
         });
@@ -77,7 +76,7 @@ public class InicioSesion extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent();
-                i.setClassName(packagename,"com.veseguro.veseguroprototype.Registro");
+                i.setClassName(getString(R.string.package_name),"com.veseguro.veseguroprototype.Registro");
                 startActivity(i);
             }
         });
@@ -179,7 +178,7 @@ public class InicioSesion extends AppCompatActivity {
                 loginSucessful[0] = true;
                 if (task.isSuccessful()) {
                     Intent i = new Intent();
-                    i.setClassName(packagename, "com.veseguro.veseguroprototype.Mapa");
+                    i.setClassName(getString(R.string.package_name), "com.veseguro.veseguroprototype.Mapa");
                     startActivity(i);
                     return;
                 }
