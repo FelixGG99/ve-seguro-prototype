@@ -108,6 +108,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btnLoginGoogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/redsocial"
@@ -122,6 +123,7 @@
             android:layout_height="10dp" />
 
         <Button
+            android:id="@+id/btnLoginFacebook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/redsocial"
@@ -150,7 +152,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="Aun no tienes cuenta"
+            android:text="@string/registerLabelES"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -159,7 +161,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="REGISTRARSE"
+            android:text="@string/registerMsgES"
             android:textAlignment="center"
             android:textColor="#FA5050"
             android:textSize="20dp"

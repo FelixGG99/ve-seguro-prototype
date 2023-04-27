@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">VeSeguro</string>
     <string name="title_activity_mapa">Mapa</string>
+
+    <string name="btnLoginGoogle">btnLoginGoogle</string>
+    <string name="btnLoginFacebook">btnLoginFacebook</string>
+
+    <string name="registerLabelES">¿Aún no tienes cuenta?</string>
+    <string name="registerMsgES">REGISTRARSE</string>
+
+    <!-- Mensasjes de error de login-->
+    <string name="GoogleLoginErrorMsg">Error al iniciar sesión con Google. Vuelve a intentar.</string>
+    <string name="FacebookLoginErrorMsg">Error al iniciar sesión con Facebook. Vuelve a intentar.</string>
 </resources>
