@@ -35,7 +35,7 @@ el estado de Puebla segun tu ubicación actual. Los usuarios pueden navegar por 
 arrastrando con los dedos, y pueden hacer zoom usando los gestos de pinza.
 
 #Marcar incidentes
-Para marcar un incidente en la aplicación, sigue estos pasos:
+#Para marcar un incidente en la aplicación, sigue estos pasos:
 
 1. Abre la aplicación
 2. Haz clic en el botón "Reportar incidente"
@@ -44,7 +44,7 @@ Para marcar un incidente en la aplicación, sigue estos pasos:
 5. Haz clic en el botón "Enviar"
 
 #Ver incidentes ocurridos
-Para ver los incidentes ocurridos en la aplicación, sigue estos pasos:
+#Para ver los incidentes ocurridos en la aplicación, sigue estos pasos:
 
 1. Abre la aplicación
 2. Haz clic en el botón "Ver incidentes"
