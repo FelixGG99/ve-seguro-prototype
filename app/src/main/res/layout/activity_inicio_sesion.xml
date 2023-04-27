@@ -27,11 +27,7 @@
     <LinearLayout
         android:id="@+id/LoginPanel"
         android:layout_width="match_parent"
-<<<<<<< HEAD
-        android:layout_height="320dp"
-=======
         android:layout_height="300dp"
->>>>>>> a7e879aa22850496c345730992318b02789c5c19
         android:background="@drawable/shape_login_shadow"
         android:orientation="vertical"
         android:paddingLeft="50dp"
@@ -57,11 +53,6 @@
             android:inputType="textPassword" />
 
         <TextView
-<<<<<<< HEAD
-=======
-            android:layout_marginTop="10dp"
-            android:gravity="center"
->>>>>>> a7e879aa22850496c345730992318b02789c5c19
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -171,11 +162,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.937">
-=======
         app:layout_constraintVertical_bias="1.0">
->>>>>>> a7e879aa22850496c345730992318b02789c5c19
 
         <TextView
             android:layout_width="match_parent"
@@ -184,11 +171,8 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
-<<<<<<< HEAD
             android:textStyle="bold" />
-=======
-             />
->>>>>>> a7e879aa22850496c345730992318b02789c5c19
+
 
         <TextView
             android:layout_width="match_parent"
