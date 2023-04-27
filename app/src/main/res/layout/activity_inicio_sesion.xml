@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toBottomOf="@id/LoginPanel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/BotonInicio"
+        android:id="@+id/IniciarSesion"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:text="Iniciar Sesión"
