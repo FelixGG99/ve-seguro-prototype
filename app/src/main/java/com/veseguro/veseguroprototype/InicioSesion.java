@@ -64,7 +64,7 @@ public class InicioSesion extends AppCompatActivity {
         // Declare buttons
         btnToMap            = (Button)findViewById(R.id.IniciarSesion);
         btnLoginGoogle      = (Button)findViewById(R.id.btnLoginGoogle);
-        btnLoginFacebook    = (Button)findViewById(R.id.btnLoginFacebook);
+        //btnLoginFacebook    = (Button)findViewById(R.id.btnLoginFacebook);
         tvRegistro          = (TextView) findViewById(R.id.RegisterLink);
         //edtEmail            = (EditText)findViewById(R.id.)
 
@@ -100,7 +100,7 @@ public class InicioSesion extends AppCompatActivity {
         });
 
         // Login con Facebook
-        btnLoginFacebook.setOnClickListener(new View.OnClickListener(){
+        /*btnLoginFacebook.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 // Configuración
@@ -128,7 +128,7 @@ public class InicioSesion extends AppCompatActivity {
                     }
                 });
             }
-        });
+        });*/
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
