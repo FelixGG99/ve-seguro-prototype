@@ -17,7 +17,7 @@
     <LinearLayout
         android:id="@+id/LoginPanel"
         android:layout_width="match_parent"
-        android:layout_height="340dp"
+        android:layout_height="300dp"
         android:background="@drawable/shape_login_shadow"
         android:paddingLeft="50dp"
         android:paddingTop="70dp"
@@ -42,7 +42,7 @@
             android:hint="Contraseña" />
 
         <TextView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,7 +68,6 @@
         android:text="Iniciar Sesión"
         android:textColor="@color/white"
         android:textSize="20dp"
-        android:fontFamily="casual"
         android:background="@drawable/boton_redondo"/>
     <ImageView
         app:layout_constraintTop_toTopOf="@id/LoginPanel"
@@ -87,9 +86,9 @@
         android:layout_height="230dp"
         android:background="@drawable/shape_login_shadow"
         android:orientation="vertical"
-        android:paddingLeft="50dp"
+        android:paddingLeft="40dp"
         android:paddingTop="40dp"
-        android:paddingRight="50dp"
+        android:paddingRight="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -98,18 +97,16 @@
         app:layout_constraintVertical_bias="0.759">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:fontFamily="casual"
-            android:text="Ingrese con sus redes sociales"
+            android:text="Ingresa con tus redes sociales"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btnLoginGoogle"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:background="@drawable/redsocial"
             android:drawableLeft="@drawable/google"
@@ -119,12 +116,12 @@
             />
 
         <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_width="324dp"
+            android:layout_height="20dp" />
 
         <Button
             android:id="@+id/btnLoginFacebook"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:background="@drawable/redsocial"
             android:drawableLeft="@drawable/facebook"
@@ -136,7 +133,7 @@
     <LinearLayout
         android:id="@+id/Registrarse"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="135dp"
         android:background="@drawable/shape_login_shadow"
         android:orientation="vertical"
         android:paddingLeft="50dp"
@@ -148,19 +145,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="casual"
             android:text="@string/registerLabelES"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold" />
+             />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="casual"
             android:text="@string/registerMsgES"
             android:textAlignment="center"
             android:textColor="#FA5050"
