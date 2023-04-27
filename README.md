@@ -1,7 +1,7 @@
 # ve-seguro-prototype <br />
 Prototipo de Ve Seguro como entrega de proyecto de Innovación en Ingeniería de Software.
 
-#DESCRIPCION
+#DESCRIPCION <br />
 Ve seguro es una aplicacion movil que permite a los usuarios del estado de Puebla ver las calles más seguras
 en su ubicación actual. La aplicación utiliza datos de crimenes  reportados por los usuarios para 
 mostrar un mapa interactivo que  muestra las calles con menos incidencias criminales
