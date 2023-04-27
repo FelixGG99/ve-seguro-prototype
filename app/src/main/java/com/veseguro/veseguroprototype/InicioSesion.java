@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +43,9 @@ public class InicioSesion extends AppCompatActivity {
 
     TextView tvRegistro;
 
+    EditText edtEmail;
+    EditText edtPassword;
+
     // ID to pick up results from starting google login intent
     private final int GOOGLE_LOGIN_INTENT_ID = 100;
 
@@ -62,14 +66,13 @@ public class InicioSesion extends AppCompatActivity {
         btnLoginGoogle      = (Button)findViewById(R.id.btnLoginGoogle);
         btnLoginFacebook    = (Button)findViewById(R.id.btnLoginFacebook);
         tvRegistro          = (TextView) findViewById(R.id.RegisterLink);
+        //edtEmail            = (EditText)findViewById(R.id.)
 
         // Button Listeners
         btnToMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent();
-                i.setClassName(getString(R.string.package_name),"com.veseguro.veseguroprototype.Mapa");
-                startActivity(i);
+                //firebaseLoginWithEmailAndPassword();
             }
         });
         tvRegistro.setOnClickListener(new View.OnClickListener() {
@@ -186,5 +189,21 @@ public class InicioSesion extends AppCompatActivity {
             }
         });
         return loginSucessful[0] ? "EXITO" : null;
+    }
+
+    private void firebaseLoginWithEmailAndPassword(String email, String password) {
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener() {
+            @Override
+            public void onComplete(@NonNull Task task) {
+                if (task.isSuccessful()) {
+                    Toast.makeText(getBaseContext(), "¡Login exitoso!.", Toast.LENGTH_LONG).show();
+                    //Intent i = new Intent();
+                    //i.setClassName(getString(R.string.package_name), "com.veseguro.veseguroprototype.InicioSesion");
+                    //startActivity(i);
+                    //return;
+                }
+                Toast.makeText(getBaseContext(), "Credenciales no validas, reintentar.", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

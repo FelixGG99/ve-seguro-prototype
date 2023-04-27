@@ -1,5 +1,6 @@
 package com.veseguro.veseguroprototype;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -54,7 +58,7 @@ public class Registro extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(validateFields()) {
-
+                    firebaseRegisterWithEmailAndPassword(edtCorreo.getText().toString().trim(), edtContraseña.getText().toString().trim());
                 }
             }
         });
@@ -63,33 +67,54 @@ public class Registro extends AppCompatActivity {
     private Boolean validateFields(){
 
         if(edtNombre.getText().toString().trim().length() == 0){
-            showMissingFieldAlert("Nombre");
+            String msg = "El campo \"Nombre\" está vacío. todos los datos deben estar completos para registrarse.";
+            showMissingFieldAlert(msg);
             return false;
         }
 
         if(edtApellidos.getText().toString().trim().length() == 0){
-            showMissingFieldAlert("Apellidos");
+            String msg = "El campo \"Apellidos\" está vacío. todos los datos deben estar completos para registrarse.";
+            showMissingFieldAlert(msg);
             return false;
         }
 
         if(edtFechaNacimiento.getText().toString().trim().length() == 0){
-            showMissingFieldAlert("Fecha de Nacimiento");
+            String msg = "El campo \"Fecha de Nacimiento\" está vacío. todos los datos deben estar completos para registrarse.";
+            showMissingFieldAlert(msg);
             return false;
         }
 
         if(edtCorreo.getText().toString().trim().length() == 0){
-            showMissingFieldAlert("Correo electrónico");
+            String msg = "El campo \"Correo electrónico\" está vacío. todos los datos deben estar completos para registrarse.";
+            showMissingFieldAlert(msg);
             return false;
         }
 
-        if(edtContraseña.getText().toString().trim().length() == 0){
-            showMissingFieldAlert("Contraseña");
+        if(edtContraseña.getText().toString().trim().length() < 6){
+            String msg = "El campo \"Contraseña\" está vacío. La contraseña debe ser al menos de 6 caracteres de largo para registrarse.";
+            showMissingFieldAlert(msg);
             return false;
         }
         return true;
     }
 
-    private void showMissingFieldAlert(String fieldName){
-        Toast.makeText(this, "El campo \""+fieldName+"\" está vacío. Es necesario llenar todos los datos antes de registrarse.", Toast.LENGTH_LONG).show();
+    private void showMissingFieldAlert(String error){
+        Toast.makeText(this, error, Toast.LENGTH_LONG).show();
+    }
+
+    private void firebaseRegisterWithEmailAndPassword(String email, String password) {
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener() {
+            @Override
+            public void onComplete(@NonNull Task task) {
+                if (task.isSuccessful()) {
+                    Toast.makeText(getBaseContext(), "Cuenta creada exitosamente. Inicia sesión con tus nuevas credenciales.", Toast.LENGTH_LONG).show();
+                    Intent i = new Intent();
+                    i.setClassName(getString(R.string.package_name), "com.veseguro.veseguroprototype.InicioSesion");
+                    startActivity(i);
+                    return;
+                }
+                Toast.makeText(getBaseContext(), task.getResult().toString(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
